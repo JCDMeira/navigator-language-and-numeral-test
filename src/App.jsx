@@ -4,6 +4,8 @@ import { GlobalStyle, Conteiner } from './global';
 import { TranslatorProvider } from 'react-translate';
 import * as lang from './languages';
 import Home from './Components/Home';
+import numeral from 'numeral';
+import Currency from './Components/Currency';
 
 function App() {
   const [language, setLanguage] = useState(lang.languagePt);
@@ -31,6 +33,7 @@ function App() {
       <Conteiner>
         <TranslatorProvider translations={language}>
           <Home />
+          <Currency />
         </TranslatorProvider>
         <br />
         <select onChange={(e) => handleChange(e)} value={languageOpt}>

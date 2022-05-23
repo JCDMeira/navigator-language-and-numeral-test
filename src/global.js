@@ -33,4 +33,8 @@ export const Conteiner = styled.div`
   align-items: center;
   background-color: var(--primary-color);
   color: var(--secundary-color);
+
+  h1 {
+    margin-top: 15px;
+  }
 `;
